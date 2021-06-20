@@ -1,0 +1,107 @@
+li {
+  list-style: none;
+}
+
+@media print, screen and (min-width: 768px) {
+  ._sp {
+    display: none;
+  }
+}
+
+._pc {
+  display: none;
+}
+
+@media print, screen and (min-width: 768px) {
+  ._pc {
+    display: block;
+  }
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Hiragino Mincho Pro", serif;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.cmn-title {
+  margin-top: 40px;
+  color: black;
+  text-align: center;
+  font-size: 32px;
+}
+
+.cmn-subtitle {
+  margin-top: 20px;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  /*display: block;*/
+  text-transform: capitalize;
+  font-family: "Times New Roman", "YuMincho", "Hiragano Mincho ProN",
+    "Yu Mincho", "MS PMincho", serif;
+}
+/*# sourceMappingURL=style.css.map */
+
+.fixed_btn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 6px 40px;
+}
+
+#rotate {
+  transition: transform 1.5s;
+  transform: rotateY(360deg);
+  display: none;
+
+  width: 250px;
+  height: 150px;
+  margin: 12px;
+  background-color: #58f;
+}
+
+/*=========グラフ表示のためのCSS ===============*/
+
+.chart-area {
+  /*円グラフがスマホでつぶれないようにする*/
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+.box {
+  max-width: 600px;
+  width: 100%;
+  margin: 100px auto 330px auto;
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+}
+
+#counter {
+  font-size: 50px;
+  font-family: "Helvetica";
+  display: block;
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  margin: 100px auto;
+  color: white;
+  text-align: center;
+  background-color: blue;
+}

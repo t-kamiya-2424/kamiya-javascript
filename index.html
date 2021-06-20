@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamiya-JavaScript</title>
+  <link rel="stylesheet" href="https://t-kamiya-2424.github.io/trial/css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!--新しいfade-->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+  <!--新しいfadeここまで-->
+  
+</head>
+<body>
+  <button class="fixed_btn">追従ボタン</button>
+
+  <h1>数字のドラムロール</h1>
+  <span id="counter">0</span>
+  <input type="button" id="start" value="START">
+
+  <div class="box">
+    <h2>円グラフ</h2>
+    <div class="chart-area">
+      <canvas id="chart01"></canvas>
+    </div>
+  </div>
+
+ 
+
+  <!--fadein-->
+  <p>スクロールしてください</p>
+  <div class="block" data-aos="fade-in">
+    fade-in
+  </div>
+  <!--fadeここまで-->
+  <p>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+    あ<br>
+  </p>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./js/jquery.counter.js"></script>
+  <script src="./js/script.js"></script>
+  <script>
+    $(function(){
+      $('#start').on('click', function(){
+        $('#counter').counter({
+          'start': 0,
+          'end': 1000,
+          'easing': 'swing',
+          'duration': 1500
+        });
+      });
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+  <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-5-6/js/9-5-6.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+</body>
+</html>
